@@ -1,0 +1,11 @@
+framework module BundleWithDependency {
+  umbrella header "BundleWithDependency.h"
+
+  export *
+  module * { export * }
+}
+
+module BundleWithDependency.Swift {
+    header "BundleWithDependency-Swift.h"
+    requires objc
+}
